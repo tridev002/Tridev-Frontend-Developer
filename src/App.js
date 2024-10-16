@@ -1,27 +1,29 @@
-import React from "react";
-import Navbar from "./components/Navbar";
-import Title from "./components/Title";
-import Features from "./components/Features";
-import About from "./components/About";
-import Tokenomics from "./components/Tokenomics";
-import Roadmap from "./components/Roadmap";
-import Faq from "./components/Faq";
-import Footer from "./components/Footer";
-import './App.css';
+import Landing from './components/Landing'
+import Features from './components/Features'
+import About from './components/About'
+import Tokenomics from './components/Tokenomics'
+import Roadmap from './components/Roadmap'
+import Footer from './components/Footer'
 
-function App() {
-  return (
-    <div className="App">
-      <Navbar />
-      <Title />
+import './App.css'
+
+const App = () => (
+  <>
+    <Landing />
+    <section id="features">
       <Features />
+    </section>
+    <section id="why-us">
       <About />
+    </section>
+    <section id="tokenomics">
       <Tokenomics />
+    </section>
+    <section id="roadmap">
       <Roadmap />
-      <Faq />
-      <Footer />
-    </div>
-  );
-}
+    </section>
+    <Footer />
+  </>
+)
 
-export default App;
+export default App
